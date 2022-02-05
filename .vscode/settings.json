@@ -1,0 +1,9 @@
+{
+    // An array of language ids which should be validated by Stylelint.
+	"stylelint.validate": [
+		"css",
+		"less",
+		"postcss",
+        "scss"
+	],
+}

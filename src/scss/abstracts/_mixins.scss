@@ -1,0 +1,62 @@
+// mobile min mixin to apply above $mobile-min
+@mixin mobile-min() {
+	@media only screen and(min-width: $mobile-min) {
+		@content;
+	}
+}
+
+// mobile max mixin to apply below $mobile-max
+@mixin mobile-max() {
+	@media only screen and (max-width: $mobile-max) {
+		@content;
+	}
+}
+
+// tablet min mixin to apply above $tablet-min
+@mixin tablet-min() {
+	@media only screen and(min-width: $tablet-min) {
+		@content;
+	}
+}
+
+// tablet max mixin to apply below $tablet-max
+@mixin tablet-max() {
+	@media only screen and(min-width: $tablet-max) {
+		@content;
+	}
+}
+
+// desktop-sm min mixin to apply above $desktop-sm-min
+@mixin desktop-sm-min() {
+	@media only screen and(min-width: $desktop-sm-min) {
+		@content;
+	}
+}
+
+// desktop-sm max mixin to apply below $desktop-sm-max
+@mixin desktop-sm-max() {
+	@media only screen and(min-width: $desktop-sm-max) {
+		@content;
+	}
+}
+
+// desktop-md min mixin to apply above $desktop-md-min
+@mixin desktop-md-min() {
+	@media only screen and(min-width: $desktop-md-min) {
+		@content;
+	}
+}
+
+// desktop-md max mixin to apply below $desktop-md-max
+@mixin desktop-md-max() {
+	@media only screen and(min-width: $desktop-md-max) {
+		@content;
+	}
+}
+
+// desktop-xl min mixin to apply above $desktop-xl-min
+@mixin desktop-xl-min() {
+	@media only screen and(min-width: $desktop-xl-min) {
+		@content;
+	}
+}
