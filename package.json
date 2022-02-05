@@ -11,6 +11,10 @@
   "author": "Bhanuprakash Janagama",
   "license": "ISC",
   "keywords": ["css", "component library"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhanuprakashj/cssBarn"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
