@@ -5,7 +5,7 @@ const changeContent = require('gulp-change');
 const htmlmin = require('gulp-htmlmin');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
-// const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
@@ -28,6 +28,7 @@ gulp.task('processSass', () => gulp.src('src/scss/main.scss')
 		replace: ['../../assets', '../assets'],
 	}))
 	.pipe(rename('style.css'))
+	.pipe(autoprefixer())
 	.pipe(minifyCss())
 	.pipe(rename('style.min.css'))
 	.pipe(sourcemaps.write('maps'))
