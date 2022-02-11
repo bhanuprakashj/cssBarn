@@ -1,0 +1,26 @@
+.avatar {
+	display: inline-block;
+	border-radius: 100%;
+	object-fit: cover;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.avatar-sm {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.avatar-md {
+	width: 3.75rem;
+	height: 3.75rem;
+}
+
+.avatar-lg {
+	width: 5rem;
+	height: 5rem;
+}
+
+.avatar-outline {
+	border: 2px solid var(--black);
+}
