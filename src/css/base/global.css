@@ -9,5 +9,7 @@ code {
 
 .component-container {
 	width: 50%;
-	margin: 0 auto;
+	margin: 0 auto 10px;
+	border-bottom: 1px solid var(--black);
+	padding: 10px;
 }
