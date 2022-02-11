@@ -1,1 +1,4 @@
 dist/**/*.css
+src/scss/vendor/**/*.scss
+node_modules/**/*.css
+node_modules/**/*.scss

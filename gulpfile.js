@@ -9,7 +9,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
-const babel = require('gulp-babel');
+const browserify = require('gulp-browserify');
+const concat = require('gulp-concat');
 const cssReplaceUrl = require('gulp-css-url-adjuster');
 const browserSync = require('browser-sync').create();
 const del = require('del');
@@ -43,13 +44,14 @@ gulp.task('browserSync', () => browserSync.init({
 
 // lints js files imported in index.js
 gulp.task('lintJs', () => gulp.src('./src/js/*.js')
+	.pipe(sourcemaps.init({ loadMaps: true }))
 	.pipe(eslint())
 	.pipe(eslint.format())
 	.pipe(eslint.failAfterError())
-	.pipe(babel())
-	.pipe(gulp.dest('./dist/js'))
+	.pipe(browserify({ insertGlobals: true }))
 	.pipe(uglify())
-	.pipe(rename('index.min.js'))
+	.pipe(concat('bundle.min.js'))
+	.pipe(sourcemaps.write('maps'))
 	.pipe(gulp.dest('./dist/js/')));
 
 // lints html files
