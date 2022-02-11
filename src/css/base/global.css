@@ -5,3 +5,8 @@ body {
 code {
 	line-height: 1.5;
 }
+
+.component-container {
+	width: 50%;
+	margin: 0 auto;
+}
