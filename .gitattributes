@@ -1,0 +1,2 @@
+# line endings CRLF
+*.js text eol=crlf
