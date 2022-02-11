@@ -1,2 +1,2 @@
 # line endings CRLF
-eol=crlf
+*.js text eol=crlf
