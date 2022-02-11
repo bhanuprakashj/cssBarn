@@ -16,4 +16,4 @@ $ npm run build
 
 ## Cloud Dev Environment ##
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/bhanuprakashj/cssBarn)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bhanuprakashj/cssBarn)
