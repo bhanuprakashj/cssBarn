@@ -4,7 +4,11 @@ body {
 
 code {
 	line-height: 1.5;
-	border-radius: 0.5rem;
+	border-radius: var(--border-radius-sm);
+}
+
+a {
+	text-decoration: none;
 }
 
 .component-container {
@@ -20,4 +24,20 @@ code {
 
 .horizontal-space-md {
 	margin-right: 1rem;
+}
+
+.img-container {
+	margin-bottom: var(--element-bottom-margin);
+}
+
+.img-container img {
+	width: 100%;
+}
+
+.container-50 {
+	width: 50%;
+}
+
+.flex-column {
+	flex-direction: column;
 }

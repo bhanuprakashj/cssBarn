@@ -105,6 +105,50 @@
 			<h6 class="heading heading-sm center-txt">Small Heading center align</h6>
 			<pre><code class="language-html">&lt;!-- extra large heading --&gt;&#10;&lt;h3 class=&quot;heading-xl&quot;&gt;Extra Large Heading&lt;/h3&gt;&#10;&lt;!-- large heading --&gt;&#10;&lt;h4 class=&quot;heading-lg&quot;&gt;Large Heading&lt;/h4&gt;&#10;&lt;!-- medium heading --&gt;&#10;&lt;h5 class=&quot;heading-md&quot;&gt;Medium Heading&lt;/h5&gt;&#10;&lt;!-- small heading --&gt;&#10;&lt;h6 class=&quot;heading-sm&quot;&gt;Small Heading&lt;/h6&gt;&#10;&lt;!-- gray text --&gt;&#10;&lt;p class=&quot;gray-txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;/p&gt;&#10;&lt;!-- small heading with center align --&gt;&#10;&lt;h6 class=&quot;heading-sm center-txt&quot;&gt;Small Heading center align&lt;/h6&gt;</code></pre>
 		</div>
+		<div class="component-container">
+			<h2>Cards</h2>
+			<!-- cards container can add "flex-column" class to change direction of cards flow-->
+			<div class="cards-container">
+				<!-- card with shadow 50% width with text overlay -->
+				<div class="card card-shadow card-50">
+					<h3 class="card-title heading heading-md">Card title</h3>
+					<div class="img-container card-overlay">
+						<img src="https://placeimg.com/640/480/tech" alt="tech">
+						<span class="card-overlay-txt heading heading-md">Text overlay</span>
+					</div>
+					<h4 class="card-subtitle heading heading-sm">Subtitle goes here</h4>
+					<p class="card-description txt gray-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<!-- card with badge -->
+				<div class="card card-50">
+					<h3 class="card-title heading heading-md">Card title</h3>
+					<div class="img-container">
+						<img src="https://placeimg.com/640/480/tech" alt="">
+					</div>
+					<h4 class="card-subtitle heading heading-sm">Subtitle goes here</h4>
+					<p class="card-description txt gray-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<span class="card-badge">New</span>
+				</div>
+				<!-- card with badge only text -->
+				<div class="card card-50">
+					<h3 class="card-title heading heading-md">Card title</h3>
+					<h4 class="card-subtitle heading heading-sm">Subtitle goes here</h4>
+					<p class="card-description txt gray-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<span class="card-badge">New</span>
+				</div>
+				<!-- card with badge only text and dismiss button -->
+				<div class="card card-50">
+					<h3 class="card-title heading heading-md">Card title</h3>
+					<h4 class="card-subtitle heading heading-sm">Subtitle goes here</h4>
+					<p class="card-description txt gray-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<a href="#" class="card-dismiss">
+						<span class="icon-close"></span>
+					</a>
+				</div>
+			</div>
+			<!-- usage code snippet for cards -->
+			<pre><code class="language-html">&lt;!-- cards container can add &quot;flex-column&quot; class to change direction of cards flow--&gt;&#10;&lt;div class=&quot;cards-container&quot;&gt;&#10;&#9;&lt;!-- card with shadow 50% width with text overlay --&gt;&#10;&#9;&lt;div class=&quot;card card-shadow card-50&quot;&gt;&#10;&#9;&#9;&lt;h3 class=&quot;card-title heading heading-md&quot;&gt;Card title&lt;/h3&gt;&#10;&#9;&#9;&lt;div class=&quot;img-container card-overlay&quot;&gt;&#10;&#9;&#9;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; alt=&quot;tech&quot;&gt;&#10;&#9;&#9;&#9;&lt;span class=&quot;card-overlay-txt heading heading-md&quot;&gt;Text overlay&lt;/span&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;h4 class=&quot;card-subtitle heading heading-sm&quot;&gt;Subtitle goes here&lt;/h4&gt;&#10;&#9;&#9;&lt;p class=&quot;card-description txt gray-txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- card with badge --&gt;&#10;&#9;&lt;div class=&quot;card card-50&quot;&gt;&#10;&#9;&#9;&lt;h3 class=&quot;card-title heading heading-md&quot;&gt;Card title&lt;/h3&gt;&#10;&#9;&#9;&lt;div class=&quot;img-container&quot;&gt;&#10;&#9;&#9;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; alt=&quot;&quot;&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;h4 class=&quot;card-subtitle heading heading-sm&quot;&gt;Subtitle goes here&lt;/h4&gt;&#10;&#9;&#9;&lt;p class=&quot;card-description txt gray-txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;&#10;&#9;&#9;&lt;span class=&quot;card-badge&quot;&gt;New&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- card with badge only text --&gt;&#10;&#9;&lt;div class=&quot;card card-50&quot;&gt;&#10;&#9;&#9;&lt;h3 class=&quot;card-title heading heading-md&quot;&gt;Card title&lt;/h3&gt;&#10;&#9;&#9;&lt;h4 class=&quot;card-subtitle heading heading-sm&quot;&gt;Subtitle goes here&lt;/h4&gt;&#10;&#9;&#9;&lt;p class=&quot;card-description txt gray-txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;&#10;&#9;&#9;&lt;span class=&quot;card-badge&quot;&gt;New&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- card with badge only text and dismiss button --&gt;&#10;&#9;&lt;div class=&quot;card card-50&quot;&gt;&#10;&#9;&#9;&lt;h3 class=&quot;card-title heading heading-md&quot;&gt;Card title&lt;/h3&gt;&#10;&#9;&#9;&lt;h4 class=&quot;card-subtitle heading heading-sm&quot;&gt;Subtitle goes here&lt;/h4&gt;&#10;&#9;&#9;&lt;p class=&quot;card-description txt gray-txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;&#10;&#9;&#9;&lt;a href=&quot;#&quot; class=&quot;card-dismiss&quot;&gt;&#10;&#9;&#9;&#9;&lt;span class=&quot;icon-close&quot;&gt;&lt;/span&gt;&#10;&#9;&#9;&lt;/a&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+		</div>
 	</main>
 	<script src="../../js/bundle.min.js"></script>
 </body>
