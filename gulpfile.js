@@ -72,7 +72,7 @@ gulp.task('lintHtml', () => gulp.src('./src/**/*.html')
 	.pipe(w3cjs())
 	.pipe(w3cjs.reporter())
 	.pipe(changeContent((content) => content.replaceAll('../dist', '.')))
-	.pipe(htmlmin({ collapseWhitespace: true }))
+	.pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
 	.pipe(gulp.dest('./dist/')));
 
 // task to watch html/css/js files and reload browser
