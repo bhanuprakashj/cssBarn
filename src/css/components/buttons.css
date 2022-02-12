@@ -1,0 +1,38 @@
+.btn {
+	display: inline-block;
+	line-height: 40px;
+	font-size: 24px;
+	padding: 0 1.25rem;
+	min-width: 100px;
+	border: 1px solid transparent;
+	background-color: transparent;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-primary {
+	background-color: var(--primary-cta-bg);
+	color: var(--primary-cta-txt-color);
+	border-color: var(--primary-cta-txt-color);
+}
+
+.btn-secondary {
+	background-color: var(--secondary-cta-bg);
+	color: var(--secondary-cta-txt-color);
+	border-color: var(--secondary-cta-txt-color);
+}
+
+.btn-link {
+	text-decoration: underline;
+}
+
+.btn-icon {
+	padding: 0 5px;
+	min-width: 2.5rem;
+}
+
+.btn-shadow {
+	border: 0;
+	box-shadow: 0 3px 6px var(--box-shadow-color);
+}

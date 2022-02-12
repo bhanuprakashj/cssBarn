@@ -12,6 +12,8 @@
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
 	--double-colonial-white: #efdfab;
+	--shuttle-gray: #58646f;
+	--fun-blue: #185fa5;
 
 	/* generic colors */
 	--box-shadow-color: var(--shuttle-gray);
@@ -31,4 +33,10 @@
 	--alert-error-txt-color: var(--maroon-oak);
 	--alert-warning-bg: var(--double-colonial-white);
 	--alert-warning-txt-color: var(--saddle-brown);
+
+	/* button component colors */
+	--primary-cta-bg: var(--fun-blue);
+	--primary-cta-txt-color: var(--white);
+	--secondary-cta-bg: var(--white);
+	--secondary-cta-txt-color: var(--fun-blue);
 }
