@@ -26,6 +26,15 @@
 
 .btn-link {
 	text-decoration: underline;
+	color: var(--secondary-cta-txt-color);
+}
+
+.btn-link:hover {
+	color: var(--secondary-cta-txt-color);
+}
+
+.btn-link:visited {
+	color: var(--secondary-cta-txt-color);
 }
 
 .btn-icon {
