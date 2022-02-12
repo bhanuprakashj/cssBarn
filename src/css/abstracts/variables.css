@@ -59,4 +59,10 @@
 	--primary-cta-txt-color: var(--white);
 	--secondary-cta-bg: var(--white);
 	--secondary-cta-txt-color: var(--blue-150);
+
+	/* text utilities colors */
+	--gray-txt-color: var(--gray-200);
+
+	/* generic variables */
+	--element-bottom-margin: 8px;
 }

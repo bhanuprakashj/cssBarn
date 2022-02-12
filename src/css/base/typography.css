@@ -1,0 +1,33 @@
+.txt,
+.heading {
+	line-height: 1.5;
+	margin-bottom: var(--element-bottom-margin);
+}
+
+.heading-sm {
+	font-size: 1.125rem;
+}
+
+.heading-md {
+	font-size: 1.5rem;
+}
+
+.heading-lg {
+	font-size: 2rem;
+}
+
+.heading-xl {
+	font-size: 2.75rem;
+}
+
+.small-text {
+	font-size: 1rem;
+}
+
+.gray-txt {
+	color: var(--gray-txt-color);
+}
+
+.center-txt {
+	text-align: center;
+}
