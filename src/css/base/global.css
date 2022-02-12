@@ -7,6 +7,10 @@ code {
 	border-radius: var(--border-radius-sm);
 }
 
+a {
+	text-decoration: none;
+}
+
 .component-container {
 	width: 50%;
 	margin: 0 auto 0.625rem;
@@ -32,4 +36,8 @@ code {
 
 .container-50 {
 	width: 50%;
+}
+
+.flex-column {
+	flex-direction: column;
 }

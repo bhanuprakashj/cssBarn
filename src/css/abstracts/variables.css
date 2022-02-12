@@ -5,18 +5,21 @@
 	--melrose: #abc2ff;
 	--mirage: #20293f;
 	--kangaroo: #c9ccc7;
+	--carrara: #eae9e6;
 	--heavy-metal: #2e2f2e;
 	--crusoe: #024912;
 	--madang: #b7efc5;
 	--maroon-oak: #5e0c14;
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
+	--saffron: #f5c22e;
 	--shuttle-gray: #58646f;
 	--fun-blue: #185fa5;
 	--double-colonial-white: #efdfab;
 	--san-felix: #096915;
 
 	/* color variations */
+	--gray-50: var(--carrara);
 	--gray-100: var(--kangaroo);
 	--gray-200: var(--shuttle-gray);
 	--gray-300: var(--heavy-metal);
@@ -30,6 +33,7 @@
 	--red-200: var(--maroon-oak);
 	--brown-100: var(--saddle-brown);
 	--yellow-100: var(--double-colonial-white);
+	--yellow-200: var(--saffron);
 
 	/* generic colors */
 	--box-shadow-color: var(--gray-200);
@@ -62,15 +66,12 @@
 
 	/* text utilities colors */
 	--gray-txt-color: var(--gray-200);
-	--fs-sm: 1.125rem;
-	--fs-md: 1.5rem;
-	--fs-lg: 2rem;
-	--fs-xl: 2.75rem;
-	--fs-xsm: 1rem;
 
 	/* cards component colors */
-	--card-bg: var(--white);
-	--card-badge-bg: var(--red-200);
+	--card-bg: var(--gray-50);
+	--card-badge-bg: var(--yellow-200);
+	--card-badge-txt-color: var(--white);
+	--card-dismiss-color: var(--red-200);
 
 	/* generic variables */
 	--element-bottom-margin: 8px;
@@ -80,4 +81,12 @@
 	/* cards component variables */
 	--horizontal-gutter: 20px;
 	--vertical-gutter: 20px;
+	--card-internal-padding: 10px;
+
+	/* text utilities variables */
+	--fs-sm: 1.125rem;
+	--fs-md: 1.5rem;
+	--fs-lg: 2rem;
+	--fs-xl: 2.75rem;
+	--fs-xsm: 1rem;
 }
