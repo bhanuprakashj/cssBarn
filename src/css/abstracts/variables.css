@@ -11,29 +11,44 @@
 	--maroon-oak: #5e0c14;
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
+	--shuttle-gray: #58646f;
 	--double-colonial-white: #efdfab;
 	--san-felix: #096915;
 
+	/* color variations */
+	--gray-100: var(--kangaroo);
+	--gray-200: var(--shuttle-gray);
+	--gray-300: var(--heavy-metal);
+	--blue-100: var(--madang);
+	--blue-200: var(--melrose);
+	--blue-300: var(--mirage);
+	--green-100: var(--san-felix);
+	--green-200: var(--crusoe);
+	--pink-100: var(--beauty-bush);
+	--red-200: var(--maroon-oak);
+	--brown-100: var(--saddle-brown);
+	--yellow-100: var(--double-colonial-white);
+
 	/* generic colors */
-	--box-shadow-color: var(--shuttle-gray);
+	--box-shadow-color: var(--gray-200);
 
 	/* ----------------------------------------------
 		Component Colors
 	------------------------------------------------- */
 
 	/* alert component colors */
-	--alert-primary-bg: var(--melrose);
-	--alert-primary-txt-color: var(--mirage);
-	--alert-secondary-bg: var(--kangaroo);
-	--alert-secondary-txt-color: var(--heavy-metal);
-	--alert-success-bg: var(--madang);
-	--alert-success-txt-color: var(--crusoe);
-	--alert-error-bg: var(--beauty-bush);
-	--alert-error-txt-color: var(--maroon-oak);
-	--alert-warning-bg: var(--double-colonial-white);
-	--alert-warning-txt-color: var(--saddle-brown);
+	--alert-primary-bg: var(--blue-200);
+	--alert-primary-txt-color: var(--blue-300);
+	--alert-secondary-bg: var(--gray-100);
+	--alert-secondary-txt-color: var(--gray-300);
+	--alert-success-bg: var(--blue-100);
+	--alert-success-txt-color: var(--green-200);
+	--alert-error-bg: var(--pink-100);
+	--alert-error-txt-color: var(--red-200);
+	--alert-warning-bg: var(--yellow-100);
+	--alert-warning-txt-color: var(--brown-100);
 
 	/* badge component colors */
-	--badge-bg: var(--san-felix);
+	--badge-bg: var(--green-100);
 	--badge-txt-color: var(--white);
 }
