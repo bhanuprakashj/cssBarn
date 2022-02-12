@@ -59,4 +59,19 @@
 	--primary-cta-txt-color: var(--white);
 	--secondary-cta-bg: var(--white);
 	--secondary-cta-txt-color: var(--blue-150);
+
+	/* text utilities colors */
+	--gray-txt-color: var(--gray-200);
+
+	/* cards component colors */
+	--card-bg: var(--white);
+
+	/* generic variables */
+	--element-bottom-margin: 8px;
+	--border-radius-xsm: 4px;
+	--border-radius-sm: 8px;
+
+	/* cards component variables */
+	--horizontal-gutter: 20px;
+	--vertical-gutter: 20px;
 }
