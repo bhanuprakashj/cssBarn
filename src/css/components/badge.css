@@ -1,0 +1,57 @@
+.badge-container {
+	display: inline-block;
+	position: relative;
+	font-size: 2rem;
+}
+
+.badge-sm {
+	width: 0.625rem;
+	color: var(--badge-txt-color);
+	height: 0.625rem;
+	font-size: calc((0.5rem / 1.5));
+	line-height: 1.5;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: translate(-70%);
+	border-radius: 100%;
+	background-color: var(--badge-bg);
+}
+
+.badge-md {
+	width: 1.125rem;
+	color: var(--badge-txt-color);
+	height: 1.125rem;
+	font-size: calc((1rem / 1.5));
+	line-height: 1.5;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: translate(-70%);
+	border-radius: 100%;
+	background-color: var(--badge-bg);
+}
+
+.badge-lg {
+	width: 1.5rem;
+	color: var(--badge-txt-color);
+	height: 1.5rem;
+	font-size: calc((1.375rem / 1.5));
+	line-height: 1.5;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: translate(-70%);
+	border-radius: 100%;
+	background-color: var(--badge-bg);
+}
+
+.badge-plus::after {
+	content: '\002B';
+}

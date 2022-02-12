@@ -4,12 +4,20 @@ body {
 
 code {
 	line-height: 1.5;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 }
 
 .component-container {
 	width: 50%;
-	margin: 0 auto 10px;
+	margin: 0 auto 0.625rem;
 	border-bottom: 1px solid var(--black);
-	padding: 10px;
+	padding: 0.625rem;
+}
+
+.horizontal-space-sm {
+	margin-right: 0.5rem;
+}
+
+.horizontal-space-md {
+	margin-right: 1rem;
 }

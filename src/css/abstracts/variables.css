@@ -12,6 +12,7 @@
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
 	--double-colonial-white: #efdfab;
+	--san-felix: #096915;
 
 	/* generic colors */
 	--box-shadow-color: var(--shuttle-gray);
@@ -31,4 +32,8 @@
 	--alert-error-txt-color: var(--maroon-oak);
 	--alert-warning-bg: var(--double-colonial-white);
 	--alert-warning-txt-color: var(--saddle-brown);
+
+	/* badge component colors */
+	--badge-bg: var(--san-felix);
+	--badge-txt-color: var(--white);
 }
