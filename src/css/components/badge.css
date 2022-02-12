@@ -1,7 +1,7 @@
 .badge-container {
 	display: inline-block;
 	position: relative;
-	font-size: 2rem;
+	font-size: var(--fs-lg);
 }
 
 .badge {

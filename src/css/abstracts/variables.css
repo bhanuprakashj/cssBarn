@@ -62,9 +62,15 @@
 
 	/* text utilities colors */
 	--gray-txt-color: var(--gray-200);
+	--fs-sm: 1.125rem;
+	--fs-md: 1.5rem;
+	--fs-lg: 2rem;
+	--fs-xl: 2.75rem;
+	--fs-xsm: 1rem;
 
 	/* cards component colors */
 	--card-bg: var(--white);
+	--card-badge-bg: var(--red-200);
 
 	/* generic variables */
 	--element-bottom-margin: 8px;
