@@ -34,6 +34,27 @@ a {
 	width: 100%;
 }
 
+.img-container .img-rounded {
+	display: inline-block;
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+.img-container .img-rounded-sm {
+	width: var(--img-round-sm);
+	height: var(--img-round-sm);
+}
+
+.img-container .img-rounded-md {
+	width: var(--img-round-md);
+	height: var(--img-round-md);
+}
+
+.img-container .img-rounded-lg {
+	width: var(--img-round-lg);
+	height: var(--img-round-lg);
+}
+
 .container-50 {
 	width: 50%;
 }

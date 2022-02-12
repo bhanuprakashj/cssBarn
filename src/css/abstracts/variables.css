@@ -89,4 +89,9 @@
 	--fs-lg: 2rem;
 	--fs-xl: 2.75rem;
 	--fs-xsm: 1rem;
+
+	/* rounded image variables */
+	--img-round-sm: 4.375rem;
+	--img-round-md: 5.625rem;
+	--img-round-lg: 7.5rem;
 }
