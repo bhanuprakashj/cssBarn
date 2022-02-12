@@ -12,6 +12,7 @@
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
 	--shuttle-gray: #58646f;
+	--fun-blue: #185fa5;
 	--double-colonial-white: #efdfab;
 	--san-felix: #096915;
 
@@ -20,6 +21,7 @@
 	--gray-200: var(--shuttle-gray);
 	--gray-300: var(--heavy-metal);
 	--blue-100: var(--madang);
+	--blue-150: var(--fun-blue);
 	--blue-200: var(--melrose);
 	--blue-300: var(--mirage);
 	--green-100: var(--san-felix);
@@ -51,4 +53,10 @@
 	/* badge component colors */
 	--badge-bg: var(--green-100);
 	--badge-txt-color: var(--white);
+
+	/* button component colors */
+	--primary-cta-bg: var(--blue-150);
+	--primary-cta-txt-color: var(--white);
+	--secondary-cta-bg: var(--white);
+	--secondary-cta-txt-color: var(--blue-150);
 }
