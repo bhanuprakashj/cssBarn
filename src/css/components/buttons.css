@@ -3,7 +3,7 @@
 	line-height: 2.5rem;
 	font-size: 1.5rem;
 	padding: 0 1.25rem;
-	margin-bottom: 8px;
+	margin-bottom: var(--element-bottom-margin);
 	min-width: 6.25rem;
 	border: 1px solid transparent;
 	background-color: transparent;
