@@ -15,6 +15,7 @@
 	--beauty-bush: #efb5ba;
 	--saddle-brown: #564000;
 	--saffron: #f5c22e;
+	--gold: #ffd700;
 	--shuttle-gray: #58646f;
 	--fun-blue: #185fa5;
 	--double-colonial-white: #efdfab;
@@ -40,6 +41,7 @@
 	--brown-100: var(--saddle-brown);
 	--yellow-100: var(--double-colonial-white);
 	--yellow-200: var(--saffron);
+	--yellow-300: var(--gold);
 
 	/* generic colors */
 	--box-shadow-color: var(--gray-200);
@@ -79,6 +81,13 @@
 	--card-badge-txt-color: var(--white);
 	--card-dismiss-color: var(--red-200);
 
+	/* rating colors */
+	--rating-color: var(--yellow-300);
+
+	/* ----------------------------------------------
+		Component Variables
+	------------------------------------------------- */
+
 	/* generic variables */
 	--element-bottom-margin: 8px;
 	--border-radius-xsm: 4px;
@@ -108,4 +117,8 @@
 	--input-valid-border-color: var(--green-100);
 	--text-area-height: 6.25rem;
 	--input-internal-padding: 0.625rem;
+
+	/* rating variables */
+	--rating-size: 1.375rem;
+	--rating-gutter: 4px;
 }

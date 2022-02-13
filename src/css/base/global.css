@@ -59,6 +59,19 @@ a {
 	width: 50%;
 }
 
+.flex-container {
+	display: flex;
+	margin-bottom: var(--element-bottom-margin);
+}
+
 .flex-column {
 	flex-direction: column;
+}
+
+.flex-row-gap {
+	row-gap: var(--element-bottom-margin);
+}
+
+.flex-column-gap {
+	column-gap: var(--element-bottom-margin);
 }

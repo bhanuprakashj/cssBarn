@@ -204,6 +204,26 @@
 			<!-- usage code snippet for inputs -->
 			<pre><code class="language-html">&lt;!-- inputs group --&gt;&#10;&lt;form action=&quot;#&quot;&gt;&#10;&#9;&lt;!-- input field --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-1&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-2&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;not valid field&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-3&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-1&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-2&quot;&gt;&lt;/textarea&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;error in text area&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-3&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
 		</div>
+		<div class="component-container">
+			<h2>Rating</h2>
+			<div class="flex-container flex-column flex-row-gap">
+				<!-- rating container with data attributes rating filled items and max rating -->
+				<div class="rating-container" data-rating="3.5" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="4" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="2" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="4.5" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="2.7" data-max-rating="5"></div>
+			</div>
+			<!-- rating dataset for filler items of empty item, half full item, full filled item to be used in rating -->
+			<!-- only one rating dataset is enough per page -->
+			<div class="rating-dataset">
+				<span class="icon-star rating rating-full-item"></span>
+				<span class="icon-star-half-o rating rating-half-item"></span>
+				<span class="icon-star-o rating rating-empty-item"></span>
+			</div>
+			<!-- usage code snippet for rating component -->
+			<pre><code class="language-html">&lt;div class=&quot;flex-container flex-column flex-row-gap&quot;&gt;&#10;&#9;&lt;!-- rating container with data attributes rating filled items and max rating --&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;3.5&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;4&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;2&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;4.5&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;2.7&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!-- rating dataset for filler items of empty item, half full item, full filled item to be used in rating --&gt;&#10;&lt;!-- only one rating dataset is enough per page --&gt;&#10;&lt;div class=&quot;rating-dataset&quot;&gt;&#10;&#9;&lt;span class=&quot;icon-star rating rating-full-item&quot;&gt;&lt;/span&gt;&#10;&#9;&lt;span class=&quot;icon-star-half-o rating rating-half-item&quot;&gt;&lt;/span&gt;&#10;&#9;&lt;span class=&quot;icon-star-o rating rating-empty-item&quot;&gt;&lt;/span&gt;&#10;&lt;/div&gt;</code></pre>
+		</div>
 	</main>
 	<script src="../../js/bundle.min.js"></script>
 </body>

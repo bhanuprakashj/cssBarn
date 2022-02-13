@@ -1,0 +1,19 @@
+.rating-dataset {
+	display: none;
+}
+
+.rating {
+	display: inline-block;
+	font-size: var(--rating-size);
+	margin-right: var(--rating-gutter);
+	color: var(--rating-color);
+}
+
+.rating:last-child {
+	margin-right: 0;
+}
+
+.rating-container {
+	display: inline-block;
+	width: fit-content;
+}
