@@ -162,7 +162,47 @@
 				<img src="https://placeimg.com/640/480/tech" alt="tech">
 			</div>
 			<!-- usage code snippet for images -->
-			<pre><code class="language-html">&lt;!-- rounded image variations --&gt;&#13;&#10;&lt;div class=&quot;img-container&quot;&gt;&#13;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-sm&quot; alt=&quot;tech&quot;&gt;&#13;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-md&quot; alt=&quot;tech&quot;&gt;&#13;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-lg&quot; alt=&quot;tech&quot;&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;!-- responsive image --&gt;&#13;&#10;&lt;div class=&quot;img-container&quot;&gt;&#13;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; alt=&quot;tech&quot;&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+			<pre><code class="language-html">&lt;!-- rounded image variations --&gt;&#10;&lt;div class=&quot;img-container&quot;&gt;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-sm&quot; alt=&quot;tech&quot;&gt;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-md&quot; alt=&quot;tech&quot;&gt;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; class=&quot;img-rounded img-rounded-lg&quot; alt=&quot;tech&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;!-- responsive image --&gt;&#10;&lt;div class=&quot;img-container&quot;&gt;&#10;&#9;&lt;img src=&quot;https://placeimg.com/640/480/tech&quot; alt=&quot;tech&quot;&gt;&#10;&lt;/div&gt;</code></pre>
+		</div>
+		<div class="component-container">
+			<h2>Input</h2>
+			<!-- inputs group -->
+			<form action="#">
+				<!-- input field -->
+				<div class="input-group">
+					<label for="input-1" class="input-label heading heading-sm">Sample label title</label>
+					<input type="text" id="input-1" placeholder="text..." class="input">
+				</div>
+				<!-- input field with error -->
+				<div class="input-group input-group-err">
+					<label for="input-2" class="input-label heading heading-sm">Sample label title</label>
+					<input type="text" id="input-2" placeholder="text..." class="input">
+					<span class="input-err-msg">not valid field</span>
+				</div>
+				<!-- input field with valid -->
+				<div class="input-group input-group-valid">
+					<label for="input-3" class="input-label heading heading-sm">Sample label title</label>
+					<input type="text" id="input-3" placeholder="text..." class="input">
+				</div>
+				<!-- text area -->
+				<div class="input-group">
+					<label for="textarea-1" class="input-label heading heading-sm">Text area title</label>
+					<textarea class="textarea" placeholder="add text here..." name="sample-textarea" id="textarea-1"></textarea>
+				</div>
+				<!-- text area with error -->
+				<div class="input-group input-group-err">
+					<label for="textarea-2" class="input-label heading heading-sm">Text area title</label>
+					<textarea class="textarea" placeholder="add text here..." name="sample-textarea" id="textarea-2"></textarea>
+					<span class="input-err-msg">error in text area</span>
+				</div>
+				<!-- text area with valid -->
+				<div class="input-group input-group-valid">
+					<label for="textarea-3" class="input-label heading heading-sm">Text area title</label>
+					<textarea class="textarea" placeholder="add text here..." name="sample-textarea" id="textarea-3"></textarea>
+				</div>
+			</form>
+			<!-- usage code snippet for inputs -->
+			<pre><code class="language-html">&lt;!-- inputs group --&gt;&#10;&lt;form action=&quot;#&quot;&gt;&#10;&#9;&lt;!-- input field --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-1&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-2&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;not valid field&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-3&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-1&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-2&quot;&gt;&lt;/textarea&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;error in text area&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-3&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
 		</div>
 	</main>
 	<script src="../../js/bundle.min.js"></script>
