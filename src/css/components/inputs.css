@@ -34,6 +34,24 @@
 	font-family: sans-serif;
 }
 
+.input-group-err .input-label {
+	color: var(--input-err-border-color);
+}
+
+.input-group-valid .input-label {
+	color: var(--input-valid-border-color);
+}
+
+.input-group-err .input,
+.input-group-err .textarea {
+	border-color: var(--input-err-border-color);
+}
+
+.input-group-valid .input,
+.input-group-valid .textarea {
+	border-color: var(--input-valid-border-color);
+}
+
 .input-group .textarea:focus {
 	outline: none;
 	border-color: var(--input-focus-border-color);
@@ -41,30 +59,6 @@
 
 .textarea::placeholder {
 	font-family: sans-serif;
-}
-
-.input-group-err .input-label {
-	color: var(--input-err-border-color);
-}
-
-.input-group-err .input {
-	border-color: var(--input-err-border-color);
-}
-
-.input-group-err .textarea {
-	border-color: var(--input-err-border-color);
-}
-
-.input-group-valid .input-label {
-	color: var(--input-valid-border-color);
-}
-
-.input-group-valid .input {
-	border-color: var(--input-valid-border-color);
-}
-
-.input-group-valid .textarea {
-	border-color: var(--input-valid-border-color);
 }
 
 .input-err-msg {
