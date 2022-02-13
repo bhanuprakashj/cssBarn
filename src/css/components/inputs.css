@@ -7,7 +7,8 @@
 	margin-bottom: var(--element-bottom-margin);
 }
 
-.input[type='text'] {
+.input[type='text'],
+.textarea {
 	width: 100%;
 	box-sizing: border-box;
 	font-size: var(--fs-xsm);
@@ -28,19 +29,12 @@
 }
 
 .textarea {
-	box-sizing: border-box;
-	margin-bottom: var(--element-bottom-margin);
-	width: 100%;
 	resize: none;
-	font-size: var(--fs-xsm);
-	padding: var(--input-internal-padding);
-	line-height: 1.5;
 	height: var(--text-area-height);
 	font-family: sans-serif;
-	outline: none;
 }
 
-.textarea:focus {
+.input-group .textarea:focus {
 	outline: none;
 	border-color: var(--input-focus-border-color);
 }
