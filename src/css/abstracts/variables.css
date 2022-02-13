@@ -79,6 +79,12 @@
 	--card-badge-txt-color: var(--white);
 	--card-dismiss-color: var(--red-200);
 
+	/* modal component colors */
+	--modal-background: var(--white);
+	--modal-backdrop: rgb(0 0 0 / 40%);
+	--modal-internal-padding: 20px;
+	--modal-close-icon-color: var(--red-200);
+
 	/* generic variables */
 	--element-bottom-margin: 8px;
 	--border-radius-xsm: 4px;
@@ -108,4 +114,8 @@
 	--input-valid-border-color: var(--green-100);
 	--text-area-height: 6.25rem;
 	--input-internal-padding: 0.625rem;
+
+	/* modal variables */
+	--modal-clickable-gutter: 1.25rem;
+	--modal-content-gutter: 0.625rem;
 }
