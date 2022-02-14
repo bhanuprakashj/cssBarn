@@ -229,6 +229,26 @@
 			<!-- usage code snippet for modal -->
 			<pre><code class="language-html">&lt;!-- modal trigger should have data-id value of modal container id to open --&gt;&#10;&lt;button class=&quot;btn btn-secondary modal-trigger&quot; data-id=&quot;modal-1&quot;&gt;Open Modal&lt;/button&gt;&#10;&lt;!-- id should match with the trigger data attribute --&gt;&#10;&lt;div class=&quot;modal-container&quot; id=&quot;modal-1&quot;&gt;&#10;&#9;&lt;div class=&quot;modal&quot;&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-head&quot;&gt;&#10;&#9;&#9;&#9;&lt;h3 class=&quot;heading heading-md&quot;&gt;Modal Title&lt;/h3&gt;&#10;&#9;&#9;&#9;&lt;!-- closes modal on clicking  --&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-icon icon-close modal-close&quot;&gt;&lt;/button&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-content&quot;&gt;&#10;&#9;&#9;&#9;&lt;p class=&quot;txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi nisi totam placeat velit enim? Ipsa, laudantium! Quisquam laborum dolores ullam nobis, eligendi doloribus officia numquam ab quasi sit ipsam.?&lt;/p&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-footer&quot;&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-primary modal-clickable&quot;&gt;Okay&lt;/button&gt;&#10;&#9;&#9;&#9;&lt;!-- modal-cancel class is required to close the modal on clicking --&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-secondary modal-clickable modal-cancel&quot;&gt;Cancel&lt;/button&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
 		</div>
+		<div class="component-container">
+			<h2>Rating</h2>
+			<div class="flex-container flex-column flex-row-gap">
+				<!-- rating container with data attributes rating filled items and max rating -->
+				<div class="rating-container" data-rating="3.5" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="4" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="2" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="4.5" data-max-rating="5"></div>
+				<div class="rating-container" data-rating="2.7" data-max-rating="5"></div>
+			</div>
+			<!-- rating dataset for filler items of empty item, half full item, full filled item to be used in rating -->
+			<!-- only one rating dataset is enough per page -->
+			<div class="rating-dataset">
+				<span class="icon-star rating rating-full-item"></span>
+				<span class="icon-star-half-o rating rating-half-item"></span>
+				<span class="icon-star-o rating rating-empty-item"></span>
+			</div>
+			<!-- usage code snippet for rating component -->
+			<pre><code class="language-html">&lt;div class=&quot;flex-container flex-column flex-row-gap&quot;&gt;&#10;&#9;&lt;!-- rating container with data attributes rating filled items and max rating --&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;3.5&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;4&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;2&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;4.5&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&#9;&lt;div class=&quot;rating-container&quot; data-rating=&quot;2.7&quot; data-max-rating=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!-- rating dataset for filler items of empty item, half full item, full filled item to be used in rating --&gt;&#10;&lt;!-- only one rating dataset is enough per page --&gt;&#10;&lt;div class=&quot;rating-dataset&quot;&gt;&#10;&#9;&lt;span class=&quot;icon-star rating rating-full-item&quot;&gt;&lt;/span&gt;&#10;&#9;&lt;span class=&quot;icon-star-half-o rating rating-half-item&quot;&gt;&lt;/span&gt;&#10;&#9;&lt;span class=&quot;icon-star-o rating rating-empty-item&quot;&gt;&lt;/span&gt;&#10;&lt;/div&gt;</code></pre>
+		</div>
 	</main>
 	<script src="../../js/bundle.min.js"></script>
 </body>
