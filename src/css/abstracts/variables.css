@@ -88,6 +88,12 @@
 		Component Variables
 	------------------------------------------------- */
 
+	/* modal component colors */
+	--modal-background: var(--white);
+	--modal-backdrop: rgb(0 0 0 / 40%);
+	--modal-internal-padding: 20px;
+	--modal-close-icon-color: var(--red-200);
+
 	/* generic variables */
 	--element-bottom-margin: 8px;
 	--border-radius-xsm: 4px;
@@ -121,4 +127,8 @@
 	/* rating variables */
 	--rating-size: 1.375rem;
 	--rating-gutter: 4px;
+
+	/* modal variables */
+	--modal-clickable-gutter: 1.25rem;
+	--modal-content-gutter: 0.625rem;
 }

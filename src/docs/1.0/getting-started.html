@@ -205,6 +205,31 @@
 			<pre><code class="language-html">&lt;!-- inputs group --&gt;&#10;&lt;form action=&quot;#&quot;&gt;&#10;&#9;&lt;!-- input field --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-1&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-2&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;not valid field&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- input field with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;input-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Sample label title&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; id=&quot;input-3&quot; placeholder=&quot;text...&quot; class=&quot;input&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area --&gt;&#10;&#9;&lt;div class=&quot;input-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-1&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-1&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with error --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-err&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-2&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-2&quot;&gt;&lt;/textarea&gt;&#10;&#9;&#9;&lt;span class=&quot;input-err-msg&quot;&gt;error in text area&lt;/span&gt;&#10;&#9;&lt;/div&gt;&#10;&#9;&lt;!-- text area with valid --&gt;&#10;&#9;&lt;div class=&quot;input-group input-group-valid&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;textarea-3&quot; class=&quot;input-label heading heading-sm&quot;&gt;Text area title&lt;/label&gt;&#10;&#9;&#9;&lt;textarea class=&quot;textarea&quot; placeholder=&quot;add text here...&quot; name=&quot;sample-textarea&quot; id=&quot;textarea-3&quot;&gt;&lt;/textarea&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
 		</div>
 		<div class="component-container">
+			<h2>Modal</h2>
+			<!-- modal trigger should have data-id value of modal container id to open -->
+			<button class="btn btn-secondary modal-trigger" data-id="modal-1">Open Modal</button>
+			<!-- id should match with the trigger data attribute -->
+			<div class="modal-container" id="modal-1">
+				<div class="modal">
+					<div class="modal-head">
+						<h3 class="heading heading-md">Modal Title</h3>
+						<!-- closes modal on clicking  -->
+						<button class="btn btn-icon icon-close modal-close"></button>
+					</div>
+					<div class="modal-content">
+						<p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi nisi totam placeat velit enim? Ipsa, laudantium! Quisquam laborum dolores ullam nobis, eligendi doloribus officia numquam ab quasi sit ipsam.?</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary modal-clickable">Okay</button>
+						<!-- modal-cancel class is required to close the modal on clicking -->
+						<button class="btn btn-secondary modal-clickable modal-cancel">Cancel</button>
+					</div>
+				</div>
+			</div>
+			<!-- usage code snippet for modal -->
+			<pre><code class="language-html">&lt;!-- modal trigger should have data-id value of modal container id to open --&gt;&#10;&lt;button class=&quot;btn btn-secondary modal-trigger&quot; data-id=&quot;modal-1&quot;&gt;Open Modal&lt;/button&gt;&#10;&lt;!-- id should match with the trigger data attribute --&gt;&#10;&lt;div class=&quot;modal-container&quot; id=&quot;modal-1&quot;&gt;&#10;&#9;&lt;div class=&quot;modal&quot;&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-head&quot;&gt;&#10;&#9;&#9;&#9;&lt;h3 class=&quot;heading heading-md&quot;&gt;Modal Title&lt;/h3&gt;&#10;&#9;&#9;&#9;&lt;!-- closes modal on clicking  --&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-icon icon-close modal-close&quot;&gt;&lt;/button&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-content&quot;&gt;&#10;&#9;&#9;&#9;&lt;p class=&quot;txt&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi nisi totam placeat velit enim? Ipsa, laudantium! Quisquam laborum dolores ullam nobis, eligendi doloribus officia numquam ab quasi sit ipsam.?&lt;/p&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-footer&quot;&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-primary modal-clickable&quot;&gt;Okay&lt;/button&gt;&#10;&#9;&#9;&#9;&lt;!-- modal-cancel class is required to close the modal on clicking --&gt;&#10;&#9;&#9;&#9;&lt;button class=&quot;btn btn-secondary modal-clickable modal-cancel&quot;&gt;Cancel&lt;/button&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+		</div>
+		<div class="component-container">
 			<h2>Rating</h2>
 			<div class="flex-container flex-column flex-row-gap">
 				<!-- rating container with data attributes rating filled items and max rating -->
