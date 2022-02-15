@@ -50,7 +50,8 @@ gulp.task('processCss', () => gulp.src('src/css/main.css')
 	.pipe(minifyCss())
 	.pipe(rename('style.min.css'))
 	.pipe(sourcemaps.write('maps'))
-	.pipe(gulp.dest('dist/css')));
+	.pipe(gulp.dest('dist/css'))
+	.pipe(browserSync.stream()));
 
 // process docs css file main.css
 gulp.task('processDocsCss', () => gulp.src('src/docsCss/main.css')
@@ -63,7 +64,8 @@ gulp.task('processDocsCss', () => gulp.src('src/docsCss/main.css')
 	.pipe(minifyCss())
 	.pipe(rename('docsStyle.min.css'))
 	.pipe(sourcemaps.write('maps'))
-	.pipe(gulp.dest('dist/docsCss')));
+	.pipe(gulp.dest('dist/docsCss'))
+	.pipe(browserSync.stream()));
 
 // starts server
 gulp.task('browserSync', () => browserSync.init({
@@ -107,8 +109,8 @@ gulp.task('lintHtml', () => gulp.src('./src/**/*.html')
 // task to watch html/css/js files and reload browser
 gulp.task('watchingFiles', () => {
 	// gulp.watch('src/scss/**/*.scss', gulp.series('processSass')).on('change', browserSync.reload);
-	gulp.watch('src/css/**/*.css', gulp.series('processCss')).on('change', browserSync.reload);
-	gulp.watch('src/docsCss/**/*.css', gulp.series('processDocsCss')).on('change', browserSync.reload);
+	gulp.watch('src/css/**/*.css', gulp.series('processCss'));
+	gulp.watch('src/docsCss/**/*.css', gulp.series('processDocsCss'));
 	gulp.watch('src/**/*.html', gulp.series('lintHtml')).on('change', browserSync.reload);
 	gulp.watch('src/js/**/*.js', gulp.series('lintJs')).on('change', browserSync.reload);
 });
