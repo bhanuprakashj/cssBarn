@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', () => {
 	// querySelects all rating container elements in dom
 	const ratingElemList = document.querySelectorAll('.rating-container');
 	// gets star items dom to fill accordingly in rating containers
-	const fullFilledStar = document.querySelector('.rating-full-item').outerHTML;
-	const fullEmptyStar = document.querySelector('.rating-empty-item').outerHTML;
-	const halfFilledStar = document.querySelector('.rating-half-item').outerHTML;
+	const fullFilledStar = document.querySelector('.rating-full-item')?.outerHTML;
+	const fullEmptyStar = document.querySelector('.rating-empty-item')?.outerHTML;
+	const halfFilledStar = document.querySelector('.rating-half-item')?.outerHTML;
 
 	// loops thorough rating container elements and adds desired rating items
 	ratingElemList.forEach((ratingElem) => {
